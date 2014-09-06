@@ -1,0 +1,371 @@
+/*$pink: #EC008B;*/
+/*$orange: #F3911F;*/
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #eeeeee; }
+
+.sidebar {
+  background-image: url("../img/side_bar.png");
+  height: 100%;
+  width: 120px;
+  position: absolute;
+  background-repeat-x: no-repeat;
+  background-position-x: -20px;
+  top: 0; }
+  .sidebar.right {
+    background-position-x: 0;
+    right: 0; }
+
+.large-icon-layout {
+  /*background-color:rgba(255,255,255,0.5);*/
+  /*padding:10px 0;*/
+  padding: 10px 0;
+  margin-bottom: 60px; }
+  .large-icon-layout i {
+    font-size: 100px;
+    float: right;
+    /*color:$primary;*/
+    /*background-color:rgba(255,255,255,0.5);*/
+    /*padding:10px 10px;*/
+    /*border-radius:10px;*/ }
+    .large-icon-layout i.fa-car {
+      font-size: 80px; }
+  .large-icon-layout h1, .large-icon-layout h2, .large-icon-layout h3, .large-icon-layout p {
+    text-align: left;
+    margin-bottom: 10px; }
+  .large-icon-layout h2 {
+    line-height: 40px; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+h2 {
+  font-size: 40px;
+  line-height: 20px; }
+
+p {
+  font-family: "OpenSans",Arial;
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5; }
+
+@media (min-width: 767px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6; } }
+a {
+  /*background-color:rgba(255,255,255,0.5);*/
+  /*padding:1px 5px;*/
+  font-weight: bold;
+  /*color: $orange;*/
+  color: #d4d4d4;
+  /*text-decoration:underline;*/
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+a:hover,
+a:focus {
+  /*text-decoration: none;*/
+  color: #ec008b; }
+
+.light {
+  font-weight: 400; }
+
+.navbar {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #4c4c4e; }
+
+.navbar-brand {
+  font-weight: 700; }
+  .navbar-brand i {
+    color: #ec008b; }
+
+.navbar-brand:focus {
+  outline: none; }
+
+.navbar-custom a {
+  color: #eeeeee; }
+
+.navbar-custom .nav li a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out; }
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #eeeeee; }
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+  outline: none; }
+
+@media (min-width: 767px) {
+  .navbar {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out; }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: #4c4c4e; }
+
+  .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
+/* .intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: $light;
+    background: url(../img/lahacienda.png) no-repeat bottom center scroll;
+    background-color: $dark;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}*/
+/*.intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+*/
+.brand-heading {
+  font-size: 40px; }
+
+.intro-text {
+  /*font-size: 18px;*/ }
+
+#intro h1, #intro h2, #intro h3, #intro p {
+  text-align: center; }
+#intro .page-scroll {
+  text-align: center; }
+
+@media (min-width: 767px) {
+  #intro {
+    height: 100%;
+    padding: 0; }
+
+  .brand-heading {
+    font-size: 100px; }
+
+  /* .intro-text {
+       font-size: 25px;
+   }*/ }
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid #eeeeee;
+  border-radius: 35px;
+  font-size: 40px;
+  color: #eeeeee;
+  background: transparent;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out; }
+
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: #eeeeee;
+  background: rgba(255, 255, 255, 0.1); }
+
+.page-scroll .btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s; }
+
+.page-scroll .btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear; }
+
+-webkit-keyframes pulse 0  {
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+-webkit-keyframes pulse 50%  {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+-webkit-keyframes pulse 100%  {
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+-moz-keyframes pulse 0  {
+  -moz-transform: scale(1);
+  transform: scale(1); }
+-moz-keyframes pulse 50%  {
+  -moz-transform: scale(1.2);
+  transform: scale(1.2); }
+-moz-keyframes pulse 100%  {
+  -moz-transform: scale(1);
+  transform: scale(1); }
+
+.content-section {
+  /*padding-top: 100px;*/ }
+
+.has-photo {
+  width: 100%;
+  padding: 100px 0;
+  min-height: 100%;
+  color: #eeeeee; }
+  .has-photo .container, .has-photo.container {
+    /*background-color:rgba(255,255,255,0.5);*/
+    /*padding:20px 0;*/ }
+
+#about .container {
+  background-color: rgba(236, 0, 139, 0.35); }
+
+#wedding .container {
+  background-color: rgba(236, 0, 139, 0.35); }
+
+#travel .container {
+  background-color: rgba(236, 0, 139, 0.35); }
+
+#intro .has-photo.container {
+  background-color: rgba(236, 0, 139, 0.35); }
+
+.photo-background {
+  content: "";
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.wedding-section {
+  background: url(../img/barn.jpg) no-repeat center center scroll;
+  background-size: 100% 100%; }
+
+.about-section {
+  background: url(../img/boston.jpg) no-repeat center center scroll;
+  background-size: 100% 100%; }
+
+.travel-section {
+  background: url(../img/austin.jpg) no-repeat center center scroll;
+  background-size: 100% 100%; }
+
+.intro-section {
+  background: url(../img/lahacienda.png) no-repeat center center scroll;
+  background-size: 100% 100%; }
+
+#travel, #wedding, #about, #intro {
+  position: relative; }
+
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px; }
+
+@media (min-width: 767px) {
+  /*  .content-section {
+        padding-top: 250px;
+    }
+
+    .wedding-section {
+        padding: 100px 0;
+    }*/
+  #map {
+    height: 400px;
+    margin-top: 250px; } }
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.btn-default {
+  border: 1px solid #ec008b;
+  color: #ec008b;
+  background-color: transparent; }
+
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #ec008b;
+  outline: none;
+  color: #4c4c4e;
+  background-color: #ec008b; }
+
+.btn-huge {
+  padding: 25px;
+  font-size: 26px; }
+
+.banner-social-buttons {
+  margin-top: 0; }
+
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px; } }
+@media (max-width: 767px) {
+  ul.banner-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0; }
+
+  ul.banner-social-buttons > li:last-child {
+    margin-bottom: 0; } }
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2); }
+
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2); }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }

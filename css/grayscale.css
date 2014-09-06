@@ -16,14 +16,14 @@ body {
   z-index: 0;
   opacity: 0.2;
   top: 0; }
-  @media (min-width: 767px) {
+  @media (min-width: 969px) {
+    .sidebar {
+      opacity: 1.0;
+      z-index: 999; } }
+  @media (min-width: 1200px) {
     .sidebar {
       width: 120px;
-      opacity: 1.0;
-      position: absolute;
-      background-repeat-x: no-repeat;
-      background-position-x: -20px;
-      z-index: 999; } }
+      background-position-x: -20px; } }
   .sidebar.right {
     background-position-x: 0;
     right: 0; }
@@ -40,14 +40,14 @@ body {
     /*background-color:rgba(255,255,255,0.5);*/
     /*padding:10px 10px;*/
     /*border-radius:10px;*/ }
-    @media (min-width: 767px) {
+    @media (min-width: 969px) {
       .large-icon-layout i {
         float: right;
         font-size: 100px;
         margin-bottom: 0; }
         .large-icon-layout i.fa-car {
           font-size: 80px; } }
-  @media (min-width: 767px) {
+  @media (min-width: 969px) {
     .large-icon-layout h1, .large-icon-layout h2, .large-icon-layout h3, .large-icon-layout p {
       text-align: left;
       margin-bottom: 10px; } }
@@ -85,7 +85,7 @@ p {
   font-size: 18px;
   line-height: 1.5; }
 
-@media (min-width: 767px) {
+@media (min-width: 969px) {
   p {
     margin: 0 0 35px;
     font-size: 20px;
@@ -151,7 +151,7 @@ a:focus {
 .navbar-toggle:active {
   outline: none; }
 
-@media (min-width: 767px) {
+@media (min-width: 969px) {
   .navbar {
     padding: 20px 0;
     border-bottom: none;
@@ -198,7 +198,7 @@ a:focus {
 #intro .page-scroll {
   text-align: center; }
 
-@media (min-width: 767px) {
+@media (min-width: 969px) {
   #intro {
     height: 100%;
     padding: 0; }
@@ -273,7 +273,7 @@ a:focus {
   padding: 30px 0;
   min-height: 100%;
   color: #eeeeee; }
-  @media (min-width: 767px) {
+  @media (min-width: 969px) {
     .has-photo {
       padding: 100px 0; } }
   .has-photo .container, .has-photo.container {
@@ -376,7 +376,7 @@ a:focus {
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
     margin-top: 15px; } }
-@media (max-width: 767px) {
+@media (max-width: 969px) {
   ul.banner-social-buttons > li {
     display: block;
     margin-bottom: 20px;

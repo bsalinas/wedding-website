@@ -30,9 +30,7 @@ body {
 
 .large-icon-layout {
   /*background-color:rgba(255,255,255,0.5);*/
-  /*padding:10px 0;*/
-  padding: 10px 0;
-  margin-bottom: 60px; }
+  /*padding:10px 0;*/ }
   .large-icon-layout i {
     margin-bottom: 20px;
     font-size: 60px;
@@ -48,9 +46,12 @@ body {
         .large-icon-layout i.fa-car {
           font-size: 80px; } }
   @media (min-width: 969px) {
-    .large-icon-layout h1, .large-icon-layout h2, .large-icon-layout h3, .large-icon-layout p {
-      text-align: left;
-      margin-bottom: 10px; } }
+    .large-icon-layout {
+      padding: 10px 0;
+      margin-bottom: 60px; }
+      .large-icon-layout h1, .large-icon-layout h2, .large-icon-layout h3, .large-icon-layout p {
+        text-align: left;
+        margin-bottom: 10px; } }
 
 html {
   width: 100%;

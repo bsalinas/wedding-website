@@ -322,8 +322,8 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
--webkit-keyframes pulse {    
-    0 {
+@keyframes pulse {    
+    0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -339,8 +339,8 @@ a:focus {
     }
 }
 
--moz-keyframes pulse {    
-    0 {
+@keyframes pulse {    
+    0% {
         -moz-transform: scale(1);
         transform: scale(1);
     }
@@ -383,6 +383,9 @@ a:focus {
 #wedding .container{
     background-color:$pink;
 }
+#rsvp .container{
+    background-color:$orange;
+}
 #travel .container{
     background-color: $dark;
 }
@@ -409,6 +412,9 @@ a:focus {
     #travel .container{
         background-color: $pink_overlay;
     }
+    #rsvp .container{
+        background-color: $pink_overlay;
+    }
     #intro .has-photo.container{
         background-color:$pink_overlay;
     }
@@ -429,7 +435,10 @@ a:focus {
 
     }
 
-
+    .rsvp-section {
+        background: url(../img/farm.jpg) no-repeat center center scroll;
+           background-size:100% 100%;
+    }
     .wedding-section {
 
         background: url(../img/barn.jpg) no-repeat center center scroll;
@@ -450,7 +459,7 @@ a:focus {
 }
 
 
-#travel,#wedding,#about,#intro{
+#travel,#wedding,#about,#intro, #rsvp{
     position:relative;
 }
  // Buttons 

@@ -1,0 +1,71 @@
+---
+---
+@import url(http://fonts.googleapis.com/css?family=Cinzel:700,400);
+
+$margin:0.25in;
+$top:$margin;
+$side: 0.1in;
+
+body{
+	width:4.25in - $top - $side;
+	height:14in - $top - $side;
+	padding:$top $side;
+	box-sizing:border-box;
+	/*overflow:hidden;*/
+	text-align:center;
+}
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Cinzel', serif;
+	font-variant:small-caps;
+	margin-bottom:0.25em;
+}
+p{
+	margin:0;
+}
+
+@media print {
+	.page-break	{
+		display:none;
+		display: block; 
+		page-break-before: always;
+		padding-bottom:$margin; 
+	}
+}
+
+header{
+	text-align: center;
+	h1,h2,h3{
+		padding:0;
+		margin:0;
+	}
+}
+dl{
+	margin-top:0;
+	dt:before {
+	  content: "";
+	  display: block;
+	  margin-bottom:0.15em;
+	}
+	&.inline{
+		dt, dd {
+		  display: inline;
+		}
+	}
+	dt{
+		font-weight:800;
+		clear:both;
+	}
+	dd{
+		font-weight:200;
+		margin-left:0;
+		color:lighten(black,30%);
+	}
+}
+#wedding_party{
+	h4{
+		padding:0;
+		margin:0;
+		color:lighten(black,30%);
+	}
+}

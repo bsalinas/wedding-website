@@ -27,6 +27,7 @@ title: Seating Chart
 	</head>
 
 	<body>
+		<h1>Table Assignments</h1>
 		{%assign grouped_guests = (site.data.guests | group_by:'last_name')%}
 		{% assign sorted_grouped_guests = (grouped_guests | sort:'name')%}
 		<div class="top">

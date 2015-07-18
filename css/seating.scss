@@ -7,10 +7,6 @@ $top:$margin;
 $side: 0.1in;
 
 body{
-	height:14in - $top - $side;
-	padding:$top $side;
-	box-sizing:border-box;
-	/*overflow:hidden;*/
 	text-align:center;
 }
 h1,h2,h3,h4,h5,h6
@@ -47,11 +43,9 @@ input{
 }
 
 dl{
-	margin-top:0;
 	dt:before {
 	  content: "";
 	  display: block;
-	  margin-bottom:0.5em;
 	}
 	&.inline{
 		dt, dd {

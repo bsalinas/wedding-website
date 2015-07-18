@@ -1,0 +1,70 @@
+---
+---
+@import url(http://fonts.googleapis.com/css?family=Cinzel:700,400);
+
+$margin:0.25in;
+$top:$margin;
+$side: 0.1in;
+
+body{
+	height:14in - $top - $side;
+	padding:$top $side;
+	box-sizing:border-box;
+	/*overflow:hidden;*/
+	text-align:center;
+}
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Cinzel', serif;
+	font-variant:small-caps;
+	margin-bottom:0.25em;
+}
+p{
+	margin:0;
+}
+input{
+	min-width:200px;
+	max-width:100%;
+	font-size:4em;
+}
+
+@media print {
+	.page-break	{
+		display:none;
+		display: block; 
+		page-break-before: always;
+		padding-bottom:$margin; 
+	}
+}
+@media print  
+{
+	.no-print{
+		display:none;
+	}
+    div{
+        page-break-inside: avoid;
+    }
+}
+
+dl{
+	margin-top:0;
+	dt:before {
+	  content: "";
+	  display: block;
+	  margin-bottom:0.5em;
+	}
+	&.inline{
+		dt, dd {
+		  display: inline;
+		}
+	}
+	dt{
+		font-weight:800;
+		clear:both;
+	}
+	dd{
+		font-weight:200;
+		margin-left:0;
+		color:lighten(black,30%);
+	}
+}

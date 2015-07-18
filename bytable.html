@@ -1,0 +1,27 @@
+---
+title: Seating Chart
+---
+<html>
+	<head>
+		<link href="css/seating.css" rel="stylesheet">
+	</head>
+
+	<body>
+		{%assign grouped_guests = (site.data.guests | group_by:'table_number')%}
+		{% assign sorted_grouped_guests = (grouped_guests | sort:'name')%}
+		<div class="top">
+		<dl>
+		{%for table_group in sorted_grouped_guests %}
+			{% assign this_group_sorted = (table_group.items | sort:'first_name')%}
+					</dl>
+				</div>
+				<div class="letter-section">
+					<h1>Table {{site.data.tables[table_group.name].table_number}} ({{table_group.name}}) </h1>
+					<dl>
+			{%for person in this_group_sorted%}
+			<dt>{{person.first_name}} {{person.last_name}}</dt>
+			{%endfor%}
+		{%endfor%}
+		</div>
+	</body>
+</html>

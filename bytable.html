@@ -19,9 +19,11 @@ title: Seating Chart
 					if($(this).find('dd:visible').length > 0){
 						$(this).find('dt:hidden').removeHighlight().show();
 						$(this).find('h1').show();
+						$(this).find('h2').show();
 					} else{
 						$(this).find('dt:hidden').removeHighlight().hide();
 						$(this).find('h1').hide();
+						$(this).find('h2').hide();
 					}
 				});
 			});
@@ -43,7 +45,10 @@ title: Seating Chart
 				</div>
 				<div class="letter-section">
 					<h1>Table {{table.table_number}} ({{table.name}}) </h1>
+					
 					<dl class="searchable">
+					<dt data-name = ""></dt>
+					<dd data-name="none">{{this_group | size}} People</dd>
 			{%for person in this_group_sorted%}
 			<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
 			<dd data-name="{{person.first_name}} {{person.last_name}}"></dd>

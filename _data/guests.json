@@ -1150,5 +1150,23 @@
     "last_name_first_char":"A",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
+  },
+  {
+    "title":"Mr.",
+    "first_name":"Aamir",
+    "last_name":"Ali",
+    "table_number":"BenCousinsTable",
+    "last_name_first_char":"A",
+    "Are they able to attend?":"Yes",
+    "Entree":"Meat"
+  },
+  {
+    "title":"Ms.",
+    "first_name":"Elyse",
+    "last_name":"Pravel",
+    "table_number":"BenCousinsTable",
+    "last_name_first_char":"P",
+    "Are they able to attend?":"Yes",
+    "Entree":"Meat"
   }
 ]

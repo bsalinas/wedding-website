@@ -237,7 +237,7 @@
     "title":"Mrs.",
     "first_name":"Irma",
     "last_name":"Gil",
-    "table_number":"GilTable",
+    "table_number":"GilVazquez",
     "last_name_first_char":"G",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -246,7 +246,7 @@
     "title":"Miss",
     "first_name":"Irma",
     "last_name":"Garza",
-    "table_number":"GilTable",
+    "table_number":"GilVazquez",
     "last_name_first_char":"G",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -255,7 +255,7 @@
     "title":"Mr.",
     "first_name":"Ovidio",
     "last_name":"Garza",
-    "table_number":"GilTable",
+    "table_number":"GilVazquez",
     "last_name_first_char":"G",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -498,7 +498,7 @@
     "title":"Mr.",
     "first_name":"Humberto ",
     "last_name":"Ibarra",
-    "table_number":"GilVazquez",
+    "table_number":"GilTable",
     "last_name_first_char":"I",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -507,7 +507,7 @@
     "title":"Mrs.",
     "first_name":"Yocasta",
     "last_name":"Garza Rosalez",
-    "table_number":"GilVazquez",
+    "table_number":"GilTable",
     "last_name_first_char":"G",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -968,15 +968,6 @@
     "last_name":"Arfele",
     "table_number":"SouthTexas",
     "last_name_first_char":"A",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
-    "title":"Mr.",
-    "first_name":"Partricia (+1)",
-    "last_name":"Hernandez",
-    "table_number":"ParentsTable",
-    "last_name_first_char":"H",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
   },

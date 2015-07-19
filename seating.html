@@ -27,7 +27,7 @@ title: Seating Chart
 	</head>
 
 	<body>
-		<h1>Table Assignments</h1>
+		<h1 class="no-print">Table Assignments</h1>
 		{%assign grouped_guests = (site.data.guests | group_by:'last_name')%}
 		{% assign sorted_grouped_guests = (grouped_guests | sort:'name')%}
 		<div class="top">
@@ -47,7 +47,9 @@ title: Seating Chart
 			{%for person in this_group_sorted%}
 			{% unless person.table_number == "100000000"%}
 			<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
-			<dd data-name="{{person.first_name}} {{person.last_name}}">{{site.data.tables[person.table_number].table_number}}</dd>
+			{%assign this_table = (site.data.tables | where:'name',person.table_number | first)%}
+			<dd data-name="{{person.first_name}} {{person.last_name}}">{{this_table.table_number}}
+			{%if person.Entree == 'Vegetarian'%}(Veg){%else%}{%if person.Entree == 'Gluten Free'%}(GF){%endif%}{%endif%}</dd>
 			{%endunless%}
 			{%endfor%}
 		{%endfor%}

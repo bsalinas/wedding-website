@@ -3,23 +3,50 @@ title: Seating Chart
 ---
 <html>
 	<head>
-		<link href="css/seating.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/seating.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.hideseek.min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function(e){
+			$('#searchBox').hideseek({
+			  ignore_accents: true,
+			  highlight:true,
+			  attribute:'data-name'
+			});
+			$('#searchBox').on("_after", function() {
+				$('.letter-section').each(function(){
+					if($(this).find('dd:visible').length > 0){
+						$(this).find('dt:hidden').removeHighlight().show();
+						$(this).find('h1').show();
+					} else{
+						$(this).find('dt:hidden').removeHighlight().hide();
+						$(this).find('h1').hide();
+					}
+				});
+			});
+		});
+	</script>
 	</head>
 
 	<body>
 		{%assign grouped_guests = (site.data.guests | group_by:'table_number')%}
 		{% assign sorted_grouped_guests = (grouped_guests | sort:'name')%}
+		{% assign all_tables = (site.data.tables)%}
 		<div class="top">
+		<input class="no-print" type="text" id="searchBox" placeholder="Search By Name" data-list=".searchable"></input
 		<dl>
-		{%for table_group in sorted_grouped_guests %}
-			{% assign this_group_sorted = (table_group.items | sort:'first_name')%}
+		{%for table in all_tables %}
+			{%assign this_group = (site.data.guests | where:'table_number',table.name)%}
+			{% assign this_group_sorted = (this_group | sort:'first_name')%}
 					</dl>
 				</div>
 				<div class="letter-section">
-					<h1>Table {{site.data.tables[table_group.name].table_number}} ({{table_group.name}}) </h1>
-					<dl>
+					<h1>Table {{table.table_number}} ({{table.name}}) </h1>
+					<dl class="searchable">
 			{%for person in this_group_sorted%}
-			<dt>{{person.first_name}} {{person.last_name}}</dt>
+			<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
+			<dd data-name="{{person.first_name}} {{person.last_name}}"></dd>
 			{%endfor%}
 		{%endfor%}
 		</div>

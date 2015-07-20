@@ -112,3 +112,22 @@ hr.symbol.thinner{
 	width:60%;
 	margin-left:20%
 }
+
+
+.menu{
+	h2{
+		margin-top:20px;
+		color:lighten(black,50%);
+	}
+	dt{
+		font-variant: small-caps;
+		font-size:24px;
+	}
+	dd{
+		text-transform: lowercase;
+		color:lighten(black,50%);
+	}
+	dl{
+		margin-bottom:2em;
+	}
+}

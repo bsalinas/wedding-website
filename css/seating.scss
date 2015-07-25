@@ -5,9 +5,11 @@
 $margin:0.25in;
 $top:$margin;
 $side: 0.1in;
-
+$pink:rgb(236,0,139);
+$grey: #aaa;
 body{
 	text-align:center;
+	font-family:Georgia;
 }
 h1,h2,h3,h4,h5,h6
 {
@@ -30,6 +32,42 @@ input{
 		display: block; 
 		page-break-before: always;
 		padding-bottom:$margin; 
+	}
+}
+.btn{
+	font-size:18px;
+	background-color:$grey;
+	padding:0.5em 2em;
+	cursor:pointer;
+}
+.btn[data-selected="yes"]{
+	background-color:$pink;
+	color:white;
+	&:hover{
+		background-color:darken($pink,15%);
+	}
+}
+.btn:hover{
+	background-color:darken($grey, 15%);
+}
+.btn-group{
+	.btn{
+		display:inline-block;
+		margin:0;
+		margin-bottom:4px;
+		border-right-width:3px;
+		border-right-color:lighten($grey, 15%);
+		border-right-style:solid;
+		&:first-of-type{
+			border-top-left-radius:3px;
+			border-bottom-left-radius:3px;
+		}
+		&:last-of-type{
+			border-right-width:0;
+
+			border-top-right-radius:3px;
+			border-bottom-right-radius:3px;
+		}
 	}
 }
 @media print  

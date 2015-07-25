@@ -9,12 +9,12 @@ title: Seating Chart
 	<script src="js/jquery.hideseek.min.js" type="text/javascript"></script>
 	<script>
 		$(document).ready(function(e){
-			$('#searchBox').hideseek({
+			$('#searchBoxTable').hideseek({
 			  ignore_accents: true,
 			  highlight:true,
 			  attribute:'data-name'
 			});
-			$('#searchBox').on("_after", function() {
+			$('#searchBoxTable').on("_after", function() {
 				$('.letter-section').each(function(){
 					if($(this).find('dd:visible').length > 0){
 						$(this).find('dt:hidden').removeHighlight().show();
@@ -36,7 +36,7 @@ title: Seating Chart
 		{% assign sorted_grouped_guests = (grouped_guests | sort:'name')%}
 		{% assign all_tables = (site.data.tables)%}
 		<div class="top">
-		<input class="no-print" type="text" id="searchBox" placeholder="Search By Name" data-list=".searchable"></input
+		<input class="no-print" type="text" id="searchBoxTable" placeholder="Search By Name" data-list=".searchableTable"></input
 		<dl>
 		{%for table in all_tables %}
 			{%assign this_group = (site.data.guests | where:'table_number',table.name)%}
@@ -46,7 +46,7 @@ title: Seating Chart
 				<div class="letter-section">
 					<h1>Table {{table.table_number}} <!--({{table.name}}) --></h1>
 					
-					<dl class="searchable">
+					<dl class="searchableTable">
 					<dt data-name = ""></dt>
 					<dd data-name="none">{{this_group | size}} People</dd>
 			{%for person in this_group_sorted%}

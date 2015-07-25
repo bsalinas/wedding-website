@@ -9,12 +9,12 @@ title: Seating Chart
 	<script src="js/jquery.hideseek.min.js" type="text/javascript"></script>
 	<script>
 		$(document).ready(function(e){
-			$('#searchBox').hideseek({
+			$('#searchBoxAlphabetical').hideseek({
 			  ignore_accents: true,
 			  attribute:'data-name'
 			});
-			$('#searchBox').on("_after", function() {
-				$('.letter-section').each(function(){
+			$('#searchBoxAlphabetical').on("_after", function() {
+				$('#byName .letter-section').each(function(){
 					if($(this).find('dd:visible').length > 0){
 						$(this).find('h1').show();
 					} else{
@@ -22,37 +22,92 @@ title: Seating Chart
 					}
 				});
 			});
+			$('#searchBoxTable').hideseek({
+			  ignore_accents: true,
+			  highlight:true,
+			  attribute:'data-name'
+			});
+			$('#searchBoxTable').on("_after", function() {
+				$('#byTable .letter-section').each(function(){
+					if($(this).find('dd:visible').length > 0){
+						$(this).find('dt:hidden').removeHighlight().show();
+						$(this).find('h1').show();
+						$(this).find('h2').show();
+					} else{
+						$(this).find('dt:hidden').removeHighlight().hide();
+						$(this).find('h1').hide();
+						$(this).find('h2').hide();
+					}
+				});
+			});
+			$('#btnSelector .btn').click(function(e){
+				$('#btnSelector .btn').attr('data-selected', 'no');
+				$(this).attr('data-selected', 'yes');
+				$('.section').hide();
+				$('#'+$(this).attr('data-name')).show();
+			});
+			$('#btnSelector .btn:first-of-type').trigger('click');
 		});
 	</script>
 	</head>
 
 	<body>
 		<h1 class="no-print">Table Assignments</h1>
-		{%assign grouped_guests = (site.data.guests | group_by:'last_name')%}
-		{% assign sorted_grouped_guests = (grouped_guests | sort:'name')%}
-		<div class="top">
-			<input class="no-print" type="text" id="searchBox" placeholder="Search By Name" data-list=".searchable"></input
-		<dl>
-		{%for last_name_group in sorted_grouped_guests %}
-			{% assign this_group_sorted = (last_name_group.items | sort:'first_name')%}
-			{% assign first_item = last_name_group.items | first%}
-			{%if first_item.last_name_first_char != old_first_char%}
-					</dl>
-				</div>
-				<div class="letter-section">
-					<h1 data-name="" class="searchable">~{{first_item.last_name_first_char}}~</h1>
-					<dl class="inline searchable">
-				{%assign old_first_char = first_item.last_name_first_char%}
-			{%endif%}
-			{%for person in this_group_sorted%}
-			{% unless person.table_number == "100000000"%}
-			<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
-			{%assign this_table = (site.data.tables | where:'name',person.table_number | first)%}
-			<dd data-name="{{person.first_name}} {{person.last_name}}">{{this_table.table_number}}
-			{%if person.Entree == 'Vegetarian'%}(Veg){%else%}{%if person.Entree == 'Gluten Free'%}(GF){%endif%}{%endif%}</dd>
-			{%endunless%}
+		<div id="btnSelector" class="btn-group no-print">
+			<div class="btn" data-name="byName">By Name</div><div class="btn" data-name="byTable">By Table</div>
+		</div>
+		<div class="section" id="byName">
+			{%assign grouped_guests = (site.data.guests | group_by:'last_name')%}
+			{% assign sorted_grouped_guests = (grouped_guests | sort:'name')%}
+			<div class="top">
+				<input class="no-print" type="text" id="searchBoxAlphabetical" placeholder="Search By Name" data-list=".searchable"></input
+			<dl>
+			{%for last_name_group in sorted_grouped_guests %}
+				{% assign this_group_sorted = (last_name_group.items | sort:'first_name')%}
+				{% assign first_item = last_name_group.items | first%}
+				{%if first_item.last_name_first_char != old_first_char%}
+						</dl>
+					</div>
+					<div class="letter-section">
+						<h1 data-name="" class="searchable">~{{first_item.last_name_first_char}}~</h1>
+						<dl class="inline searchable">
+					{%assign old_first_char = first_item.last_name_first_char%}
+				{%endif%}
+				{%for person in this_group_sorted%}
+				{% unless person.table_number == "100000000"%}
+				<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
+				{%assign this_table = (site.data.tables | where:'name',person.table_number | first)%}
+				<dd data-name="{{person.first_name}} {{person.last_name}}">{{this_table.table_number}}
+				{%if person.Entree == 'Vegetarian'%}(Veg){%else%}{%if person.Entree == 'Gluten Free'%}(GF){%endif%}{%endif%}</dd>
+				{%endunless%}
+				{%endfor%}
 			{%endfor%}
-		{%endfor%}
+			</div>
+		</div>
+		<div class="section" id="byTable" class="no-print">
+			{%assign grouped_guests = (site.data.guests | group_by:'table_number')%}
+			{% assign sorted_grouped_guests = (grouped_guests | sort:'name')%}
+			{% assign all_tables = (site.data.tables)%}
+			<div class="top">
+			<input class="no-print" type="text" id="searchBoxTable" placeholder="Search By Name" data-list=".searchableTable"></input
+			<dl>
+			{%for table in all_tables %}
+				{%assign this_group = (site.data.guests | where:'table_number',table.name)%}
+				{% assign this_group_sorted = (this_group | sort:'first_name')%}
+						</dl>
+					</div>
+					<div class="letter-section">
+						<h1>Table {{table.table_number}} <!--({{table.name}}) --></h1>
+						
+						<dl class="searchableTable">
+						<dt data-name = ""></dt>
+						<dd data-name="none">{{this_group | size}} People</dd>
+				{%for person in this_group_sorted%}
+				<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
+				<dd data-name="{{person.first_name}} {{person.last_name}}"></dd>
+				{%endfor%}
+			{%endfor%}
+			</div>
 		</div>
 	</body>
 </html>

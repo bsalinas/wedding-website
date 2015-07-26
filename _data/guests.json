@@ -1151,7 +1151,7 @@
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
   },
-    {
+  {
     "title":"Miss",
     "first_name":"Vania",
     "last_name":"Santos",
@@ -1160,12 +1160,21 @@
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
   },
-    {
+  {
     "title":"Mr.",
     "first_name":"Jorge",
     "last_name":"Delgado",
     "table_number":"RinaTable",
     "last_name_first_char":"D",
+    "Are they able to attend?":"Yes",
+    "Entree":"Meat"
+  },
+  {
+    "title":"Mr.",
+    "first_name":"Steven",
+    "last_name":"Ross",
+    "table_number":"ParentsTable",
+    "last_name_first_char":"R",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
   }

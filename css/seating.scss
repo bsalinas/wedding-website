@@ -26,7 +26,18 @@ input{
 	font-size:2em;
 }
 
+.only-print{
+	display:none;
+}
 @media print {
+	.only-print{
+		display:initial;
+	}
+	.website-sign{
+		h1{
+			font-size:2em;
+		}
+	}
 	.page-break	{
 		display:none;
 		display: block; 
@@ -77,6 +88,9 @@ input{
 	}
     div{
         page-break-inside: avoid;
+    }
+    .letter-section{
+    	padding-top:0.25in;
     }
 }
 

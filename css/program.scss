@@ -114,7 +114,19 @@ hr.symbol.thinner{
 }
 
 
+.menu.wide{
+	
+}
 .menu{
+	width:8.5in;
+	#desserts{
+		width:4.25in;
+	}
+	#alcoholic,#nonalcoholic{
+		width:45%;
+		vertical-align:top;
+		display:inline-block;
+	}
 	h2{
 		margin-top:20px;
 		color:lighten(black,50%);

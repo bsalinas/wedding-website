@@ -42,7 +42,11 @@ input{
 		display:none;
 		display: block; 
 		page-break-before: always;
-		padding-bottom:$margin; 
+		/*padding-bottom:$margin; */
+	}
+	dl{
+		font-size:28px;
+		margin-top:0;
 	}
 }
 .btn{
@@ -90,7 +94,7 @@ input{
         page-break-inside: avoid;
     }
     .letter-section{
-    	padding-top:0.25in;
+    	padding-top:0.05in;
     }
 }
 

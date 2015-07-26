@@ -106,7 +106,7 @@ title: Seating Chart
 						
 						<dl class="searchableTable">
 						<dt data-name = ""></dt>
-						<dd data-name="none">{{this_group | size}} People</dd>
+						<!-- <dd data-name="none">{{this_group | size}} People</dd> -->
 				{%for person in this_group_sorted%}
 				<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
 				<dd data-name="{{person.first_name}} {{person.last_name}}"></dd>

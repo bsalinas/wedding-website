@@ -990,33 +990,6 @@
     "Entree":"Meat"
   },
   {
-    "title":"Mrs.",
-    "first_name":"Victoria",
-    "last_name":"PLACEHOLDER Muniz",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
-    "title":"Mr.",
-    "first_name":"Beto",
-    "last_name":"PLACEHOLDER Muniz",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
-    "title":"Ms.",
-    "first_name":"Sophia",
-    "last_name":"PLACEHOLDER Muniz",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
     "title":"Mr.",
     "first_name":"Frank",
     "last_name":"PLACEHOLDER",
@@ -1175,6 +1148,33 @@
     "last_name":"Pravel",
     "table_number":"SouthTexas",
     "last_name_first_char":"P",
+    "Are they able to attend?":"Yes",
+    "Entree":"Meat"
+  },
+  {
+    "title":"Mrs.",
+    "first_name":"Victoria",
+    "last_name":"Mu&ntilde;iz",
+    "table_number":"PeachTable",
+    "last_name_first_char":"Muniz",
+    "Are they able to attend?":"Yes",
+    "Entree":"Meat"
+  },
+  {
+    "title":"Mr.",
+    "first_name":"Beto",
+    "last_name":"Mu&ntilde;iz",
+    "table_number":"PeachTable",
+    "last_name_first_char":"Muniz",
+    "Are they able to attend?":"Yes",
+    "Entree":"Meat"
+  },
+  {
+    "title":"Ms.",
+    "first_name":"Sophia",
+    "last_name":"Mu&ntilde;iz",
+    "table_number":"PeachTable",
+    "last_name_first_char":"Muniz",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
   }

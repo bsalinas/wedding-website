@@ -97,20 +97,22 @@ title: Seating Chart
 			<input class="no-print" type="text" id="searchBoxTable" placeholder="Search By Name" data-list=".searchableTable"></input
 			<dl>
 			{%for table in all_tables %}
-				{%assign this_group = (site.data.guests | where:'table_number',table.name)%}
-				{% assign this_group_sorted = (this_group | sort:'first_name')%}
-						</dl>
-					</div>
-					<div class="letter-section">
-						<h1>Table {{table.table_number}} <!--({{table.name}}) --></h1>
-						
-						<dl class="searchableTable">
-						<dt data-name = ""></dt>
-						<dd data-name="none">{{this_group | size}} People</dd>
-				{%for person in this_group_sorted%}
-				<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
-				<dd data-name="{{person.first_name}} {{person.last_name}}"></dd>
-				{%endfor%}
+				{% unless table.name == "100000000"%}
+					{%assign this_group = (site.data.guests | where:'table_number',table.name)%}
+					{% assign this_group_sorted = (this_group | sort:'first_name')%}
+							</dl>
+						</div>
+						<div class="letter-section">
+							<h1>Table {{table.table_number}} <!--({{table.name}}) --></h1>
+							
+							<dl class="searchableTable">
+							<dt data-name = ""></dt>
+							<dd data-name="none">{{this_group | size}} People</dd>
+					{%for person in this_group_sorted%}
+						<dt data-name="{{person.first_name}} {{person.last_name}}">{{person.first_name}} {{person.last_name}}</dt>
+						<dd data-name="{{person.first_name}} {{person.last_name}}"></dd>
+					{%endfor%}
+				{%endunless%}
 			{%endfor%}
 			</div>
 		</div>

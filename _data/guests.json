@@ -372,7 +372,7 @@
     "title":"Ms.",
     "first_name":"Kellie",
     "last_name":"Rowlett",
-    "table_number":"KarenFriends1",
+    "table_number":"KarenFriends2",
     "last_name_first_char":"R",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -381,7 +381,7 @@
     "title":"Mr.",
     "first_name":"Travis",
     "last_name":"Hutchinson",
-    "table_number":"KarenFriends1",
+    "table_number":"KarenFriends2",
     "last_name_first_char":"H",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -651,7 +651,7 @@
     "title":"Mrs.",
     "first_name":"Erin",
     "last_name":"Schmidt",
-    "table_number":"KarenFriends2",
+    "table_number":"KarenFriends1",
     "last_name_first_char":"S",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -660,7 +660,7 @@
     "title":"Mr.",
     "first_name":"Hunter",
     "last_name":"Schmidt",
-    "table_number":"KarenFriends2",
+    "table_number":"KarenFriends1",
     "last_name_first_char":"S",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -903,7 +903,7 @@
     "title":"Ms.",
     "first_name":"Nicole",
     "last_name":"Bennett",
-    "table_number":"KarenFriends1",
+    "table_number":"KarenFriends2",
     "last_name_first_char":"B",
     "Are they able to attend?":"Yes",
     "Entree":"Gluten Free"
@@ -912,7 +912,7 @@
     "title":"Mr.",
     "first_name":"Seth ",
     "last_name":"Bruton ",
-    "table_number":"KarenFriends1",
+    "table_number":"KarenFriends2",
     "last_name_first_char":"B",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -921,7 +921,7 @@
     "title":"Mr.",
     "first_name":"Marty ",
     "last_name":"Morris",
-    "table_number":"SouthTexas",
+    "table_number":"DanielTable",
     "last_name_first_char":"M",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -930,7 +930,7 @@
     "title":"Mrs.",
     "first_name":"Rise",
     "last_name":"Morris",
-    "table_number":"SouthTexas",
+    "table_number":"DanielTable",
     "last_name_first_char":"M",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -939,7 +939,7 @@
     "title":"Mr.",
     "first_name":"Michael",
     "last_name":"Morris",
-    "table_number":"SouthTexas",
+    "table_number":"DanielTable",
     "last_name_first_char":"M",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -1054,24 +1054,6 @@
   },
   {
     "title":"Mr.",
-    "first_name":"Manuel",
-    "last_name":"PLACEHOLDER Sanchez",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
-    "title":"Mrs.",
-    "first_name":"Martha",
-    "last_name":"PLACEHOLDER Sanchez",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
-    "title":"Mr.",
     "first_name":"John",
     "last_name":"Pravel",
     "table_number":"SouthTexas",
@@ -1177,5 +1159,24 @@
     "last_name_first_char":"R",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
+  },
+  {
+    "title":"Mr.",
+    "first_name":"Bryan",
+    "last_name":"Pravel",
+    "table_number":"SouthTexas",
+    "last_name_first_char":"P",
+    "Are they able to attend?":"Yes",
+    "Entree":"Meat"
+  },
+  {
+    "title":"Mrs.",
+    "first_name":"Sarah",
+    "last_name":"Pravel",
+    "table_number":"SouthTexas",
+    "last_name_first_char":"P",
+    "Are they able to attend?":"Yes",
+    "Entree":"Meat"
   }
+
 ]

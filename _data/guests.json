@@ -372,7 +372,7 @@
     "title":"Ms.",
     "first_name":"Kellie",
     "last_name":"Rowlett",
-    "table_number":"KarenFriends2",
+    "table_number":"KarenFriends1",
     "last_name_first_char":"R",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -381,7 +381,7 @@
     "title":"Mr.",
     "first_name":"Travis",
     "last_name":"Hutchinson",
-    "table_number":"KarenFriends2",
+    "table_number":"KarenFriends1",
     "last_name_first_char":"H",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -651,7 +651,7 @@
     "title":"Mrs.",
     "first_name":"Erin",
     "last_name":"Schmidt",
-    "table_number":"KarenFriends1",
+    "table_number":"KarenFriends2",
     "last_name_first_char":"S",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -660,7 +660,7 @@
     "title":"Mr.",
     "first_name":"Hunter",
     "last_name":"Schmidt",
-    "table_number":"KarenFriends1",
+    "table_number":"KarenFriends2",
     "last_name_first_char":"S",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
@@ -992,36 +992,27 @@
   {
     "title":"Mr.",
     "first_name":"Frank",
-    "last_name":"PLACEHOLDER",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
+    "last_name":"Sanchez",
+    "table_number":"KarenFriends2",
+    "last_name_first_char":"S",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
   },
   {
     "title":"Mrs.",
     "first_name":"Krystel",
-    "last_name":"PLACEHOLDER",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
+    "last_name":"Sanchez",
+    "table_number":"KarenFriends2",
+    "last_name_first_char":"S",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
   },
   {
     "title":"Ms.",
-    "first_name":"Frank Kid",
-    "last_name":"PLACEHOLDER",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
-    "title":"Ms.",
-    "first_name":"Frank Kid",
-    "last_name":"PLACEHOLDER",
-    "table_number":"100000000",
-    "last_name_first_char":"P",
+    "first_name":"Frank",
+    "last_name":"Sanchez, Jr.",
+    "table_number":"KarenFriends2",
+    "last_name_first_char":"S",
     "Are they able to attend?":"Yes",
     "Entree":"Meat"
   },

@@ -999,24 +999,6 @@
     "Entree":"Meat"
   },
   {
-    "title":"Mrs.",
-    "first_name":"Krystel",
-    "last_name":"Sanchez",
-    "table_number":"KarenFriends2",
-    "last_name_first_char":"S",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
-    "title":"Ms.",
-    "first_name":"Frank",
-    "last_name":"Sanchez, Jr.",
-    "table_number":"KarenFriends2",
-    "last_name_first_char":"S",
-    "Are they able to attend?":"Yes",
-    "Entree":"Meat"
-  },
-  {
     "title":"Mr.",
     "first_name":"John",
     "last_name":"Pravel",

@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Cinzel:700,400);
 
 $margin:0.25in;
+$margintop:0.69in;
 $top:$margin;
 $side: 0.1in;
 $pink:rgb(236,0,139);
@@ -11,6 +12,14 @@ body{
 	text-align:center;
 	font-family:Georgia;
 }
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: $margintop $side $margin $side;  
+} 
+
 h1,h2,h3,h4,h5,h6
 {
 	font-family: 'Cinzel', serif;
@@ -42,7 +51,6 @@ input{
 		display:none;
 		display: block; 
 		page-break-before: always;
-		/*padding-bottom:$margin; */
 	}
 	dl{
 		font-size:28px;

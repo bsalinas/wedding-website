@@ -1,109 +1,119 @@
 <html>
 	<head>
 	<link href="css/program.css" rel="stylesheet" media="print">
+	<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script>
+	$(document).ready(function(){
+		$('body').append('<div id="secondBody"></div>');
+		$('#secondBody').html($('#firstBody').html());
+
+	});
+	</script>
 	</head>
 	<body>
-		<header>
-			<h3>The Marriage Ceremony Uniting</h3>
-			<h2>Karen Denisse V&aacute;zquez</h2>
-			<!-- <h3>~ & ~</h3> -->
-			<hr class="symbol" data-symbol="&"/>
-			<h2>Benjam&iacute;n Jos&eacute; Salinas</h2>
+		<div id="firstBody">
+			<header>
+				<h3>The Marriage Ceremony Uniting</h3>
+				<h2>Karen Denisse V&aacute;zquez</h2>
+				<!-- <h3>~ & ~</h3> -->
+				<hr class="symbol" data-symbol="&"/>
+				<h2>Benjam&iacute;n Jos&eacute; Salinas</h2>
 
-			<dl id="datetime">
-				<div>August 2, 2015</div>
-				<div>At Six o'clock in the Evening</div>
-				<div>Dripping Springs, TX</div>
-			</dl>
-		</header>
-		<hr class="symbol thinner" data-symbol="&#10084;"/>
-		
-		<article id="ceremony">
-			<h2>Ceremony</h2>
-			<dl>
-				<dt>&#x266A;Processional Music</dt>
-				<dd>Danny and Eliana Salinas</dd>
-				<dt>Opening Prayer</dt>
-				<dd>Ann Williams Cass</dd>
-				<dt>Welcome</dt>
-				<dd>Steven Ross, Officiant</dd>
-				<dt>Reading: Us Two (A.A Milne)</dt>
-				<dd>Hannah Salinas</dd>
-				<dt>&#x266A;Faith, Hope and Love (George Pyle)</dt>
-				<dd>George Pyle and Natalie Smith</dd>
-				<dt>Exchange of Truths</dt>
-				<dd>Steven Ross</dd>
-				<dt>Reading: The Key to Love (Anonymous)</dt>
-				<dd>Rebecca Salinas</dd>
-				<dt>Presentation of the Couple</dt>
-				<dd>Steven Ross</dd>
-				<dt>&#x266A;I'll Cover You (from Rent)</dt>
-				<dd>Libby Hollinger and Mario Contreras</dd>
+				<dl id="datetime">
+					<div>August 2, 2015</div>
+					<div>At Six o'clock in the Evening</div>
+					<div>Dripping Springs, TX</div>
+				</dl>
+			</header>
+			<hr class="symbol thinner" data-symbol="&#10084;"/>
+			
+			<article id="ceremony">
+				<h2>Ceremony</h2>
+				<dl>
+					<dt>&#x266A;Processional Music</dt>
+					<dd>Danny and Eliana Salinas</dd>
+					<dt>Opening Prayer</dt>
+					<dd>Ann Williams Cass</dd>
+					<dt>Welcome</dt>
+					<dd>Steven Ross, Officiant</dd>
+					<dt>Reading: Us Two (A.A Milne)</dt>
+					<dd>Hannah Salinas</dd>
+					<dt>&#x266A;Faith, Hope and Love (George Pyle)</dt>
+					<dd>George Pyle and Natalie Smith</dd>
+					<dt>Exchange of Truths</dt>
+					<dd>Steven Ross</dd>
+					<dt>Reading: The Key to Love (Anonymous)</dt>
+					<dd>Rebecca Salinas</dd>
+					<dt>Presentation of the Couple</dt>
+					<dd>Steven Ross</dd>
+					<dt>&#x266A;I'll Cover You (from Rent)</dt>
+					<dd>Libby Hollinger and Mario Contreras</dd>
 
-			</dl>
-		</article>
-		<article id="reception">
-			<h2>Reception</h2>
-			<dl>
-				<dt>6:30 - 7:00</dt>
-				<dd>Cocktail Reception</dd>
-				<dt>7:00 - 8:00</dt>
-				<dd>Dinner</dd>
-				<dt>8:00 - 10:45</dt>
-				<dd>Dancing, Cake, and More</dd>
-			</dl>
-		</article>
-		<div class="page-break"></div>
-		<article id="wedding_party">	
-			<h2>Bride's Family</h2>
-			<dl class="inline">
-			<dt>Silvia Gil V&aacute;zquez</dt>
-			<dt>Carlos Fernando V&aacute;zquez</dt>
-			<dt>Karla Desire V&aacute;zquez</dt>
-			</dl>
-			<!-- <h4>Grandparents</h4> -->
-			<dl class="inline">
-				<dt>Irma Quintanilla</dt>
-				<dt>Carlos Gil &#x271D</dt>
-				<dt>Elvira Hernandez de V&aacute;zquez &#x271D</dt>
+				</dl>
+			</article>
+			<article id="reception">
+				<h2>Reception</h2>
+				<dl>
+					<dt>6:30 - 7:00</dt>
+					<dd>Cocktail Reception</dd>
+					<dt>7:00 - 8:00</dt>
+					<dd>Dinner</dd>
+					<dt>8:00 - 10:45</dt>
+					<dd>Dancing, Cake, and More</dd>
+				</dl>
+			</article>
+			<div class="page-break"></div>
+			<article id="wedding_party">	
+				<h2>Bride's Family</h2>
+				<dl class="inline">
+				<dt>Silvia Gil V&aacute;zquez</dt>
 				<dt>Carlos Fernando V&aacute;zquez</dt>
-			</dl>
-			<h2>Groom's Family</h2>
-			<dl class="inline">
-			<dt>Cathy Pravel Salinas</dt>
-			<dt>Felipe C&eacute;sar Salinas</dt>
-			<dt>Daniel Andr&eacute;s Salinas</dt>
-			<dt>Rebecca Teresa Salinas</dt>
-			<dt>Hannah Elisabeth Salinas</dt>
-			</dl>
-			<!-- <h4>Grandparents</h4> -->
-			<dl class="">
-				<dt>Judith Elaine MacArthur</dt>
-				<dt>John Robert Pravel</dt>
-				<dt>Margarita Guerra Salinas &#x271D</dt>
-				<dt>C&eacute;sar Salinas &#x271D</dt>
-			</dl>
-			<h2>The Wedding Party</h2>
-			<dl class="inline">
-				<dt>Libby Paige Hollinger</dt>
 				<dt>Karla Desire V&aacute;zquez</dt>
-				<dt>Emily Rose Hart</dt>
-				<dt>Meredith Eve Grabscheid</dt>
-			</dl>
-			<dl class="inline">
+				</dl>
+				<!-- <h4>Grandparents</h4> -->
+				<dl class="inline">
+					<dt>Irma Quintanilla</dt>
+					<dt>Carlos Gil &#x271D</dt>
+					<dt>Elvira Hernandez de V&aacute;zquez &#x271D</dt>
+					<dt>Carlos Fernando V&aacute;zquez</dt>
+				</dl>
+				<h2>Groom's Family</h2>
+				<dl class="inline">
+				<dt>Cathy Pravel Salinas</dt>
+				<dt>Felipe C&eacute;sar Salinas</dt>
 				<dt>Daniel Andr&eacute;s Salinas</dt>
-				<dt>Andrew Owen Coats</dt>
-				<dt>George Donald Harris</dt>
-				<dt>Robert Chester Macklin</dt>
-			</dl>
-		</article>
-		<article id="thanks">
-		<!-- <h2>A Note to Our Guests</h2> -->
-		<!-- <hr/> -->
-		<p>We would like to express our deep gratitude to everyone who was able to join us on this special day. Your willingness to take time out of your busy lives to celebrate with us means so much.</p>
-		<p> We would especially like to offer our heartfelt thanks to our families who have been so supportive of us. Without their constant love and support we would not be who we are today.</p>
-		<p class="right">&#10084; Karen & Ben</p>
-		<!-- <hr/> -->
-		</article>
+				<dt>Rebecca Teresa Salinas</dt>
+				<dt>Hannah Elisabeth Salinas</dt>
+				</dl>
+				<!-- <h4>Grandparents</h4> -->
+				<dl class="">
+					<dt>Judith Elaine MacArthur</dt>
+					<dt>John Robert Pravel</dt>
+					<dt>Margarita Guerra Salinas &#x271D</dt>
+					<dt>C&eacute;sar Salinas &#x271D</dt>
+				</dl>
+				<h2>The Wedding Party</h2>
+				<dl class="inline">
+					<dt>Libby Paige Hollinger</dt>
+					<dt>Karla Desire V&aacute;zquez</dt>
+					<dt>Emily Rose Hart</dt>
+					<dt>Meredith Eve Grabscheid</dt>
+				</dl>
+				<dl class="inline">
+					<dt>Daniel Andr&eacute;s Salinas</dt>
+					<dt>Andrew Owen Coats</dt>
+					<dt>George Donald Harris</dt>
+					<dt>Robert Chester Macklin</dt>
+				</dl>
+			</article>
+			<article id="thanks">
+			<!-- <h2>A Note to Our Guests</h2> -->
+			<!-- <hr/> -->
+			<p>We would like to express our deep gratitude to everyone who was able to join us on this special day. Your willingness to take time out of your busy lives to celebrate with us means so much.</p>
+			<p> We would especially like to offer our heartfelt thanks to our families who have been so supportive of us. Without their constant love and support we would not be who we are today.</p>
+			<p class="right">&#10084; Karen & Ben</p>
+			<!-- <hr/> -->
+			</article>
+		</div>
 	</body>
 </html>

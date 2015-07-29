@@ -6,10 +6,29 @@ $margin:0.25in;
 $top:$margin;
 $side: 0.1in;
 
-body{
-	width:4.25in - $top - $side;
-	height:14in - $top - $side;
+#firstBody,#secondBody{
+	width:50%;
+	// display:inline-block;
 	padding:$top $side;
+	box-sizing:border-box;
+	margin:0;
+}
+#firstBody{
+	// margin-right:$side;
+	float:left;
+}
+#secondBody{
+	// margin-left:$side;
+	float:right;
+}
+#wedding_party{
+	page-break-inside: avoid;
+	padding-top:$top;
+}
+body{
+	width:8.5in;
+	height:11in;
+	margin:0;
 	box-sizing:border-box;
 	/*overflow:hidden;*/
 	text-align:center;
@@ -118,7 +137,9 @@ hr.symbol.thinner{
 	
 }
 .menu{
-	width:8.5in;
+
+	width:calc(8.5in - #{$top} - #{$top});
+	padding:$top;
 	#desserts{
 		width:4.25in;
 	}
